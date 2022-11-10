@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/icon.png" />
+        <title>Drinks Calc</title>
+    </head>
+    <body class="grid grid-cols-1 place-items-center gap-12">
+        <header class="mt-5 text-3xl grid grid-cols-[1fr_auto_1fr]">
+            <img src="/icon.png" alt="calculator icon" class="h-10 justify-self-end">
+            <h1 class="self-center">Standard Drink Calculator</h1>
+        </header>
+        <main class="mx-2 grid grid-cols-3 place-items-center gap-x-10 gap-y-4">
+            <div id="headings" class="contents">
+                <div>Volume (ml)</div>
+                <div>ABV (%)</div>
+                <div>Standard Drinks</div>
+            </div>
+
+            <div id="footer" class="contents">
+                <button
+                    id="clear"
+                    class="mt-10 w-full place-self-center self-center rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700 active:bg-blue-900"
+                >
+                    Clear
+                </button>
+                <p class="mt-10 w-full self-center justify-self-end text-right">
+                    Total Drinks:
+                </p>
+                <div
+                    id="total"
+                    class="mt-10 block w-full self-center rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-center text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                >
+                    0
+                </div>
+            </div>
+        </main>
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
